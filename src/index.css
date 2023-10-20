@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /*background-color: #242424;*/
+  background-color: #00204e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,16 +24,42 @@ a:hover {
 }
 
 body {
+  background-color: #00204e;
+}
+
+nav {
+  background-color: #00204e;
+  border-bottom: 1px solid #21578a;
+  display: block;
+  margin: 0;
+  padding: 21px 22px;
+  width: 100%;
+  z-index: 9999;
+}
+
+section {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: #ffffff;
+  background-color: #00204e33;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.header {
+  background-color: #fff;
+  border-radius: 16px;
+  color: #00204e;
+  display: flex;
+  place-items: center;
+  padding: 6px 45px 6px 18px;
+  user-select: none;
 }
 
 button {

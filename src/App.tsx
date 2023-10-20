@@ -1,26 +1,41 @@
 import { useEffect, useState } from 'react';
-import allicaClose from './assets/allicator_closed.svg';
-import allicaOpen from './assets/allicator_open.svg';
+import allieClose from './assets/allie-close.png';
+import allieOpen from './assets/allie-open.png';
+import allicaLogo from './assets/AllicaBank.svg';
 import './App.css';
 
 function App() {
     const [isClose, setIsClose] = useState(false);
 
     useEffect(() => {
-        setInterval(() => {
+        const interval = setInterval(() => {
             setIsClose((prevState => !prevState));
         }, 1000);
+
+        return () => {
+            clearInterval(interval);
+        };
     }, []);
 
+    const handleClick = () => {
+        const button = document.querySelector('[aria-label="Close Ask Allie"]') as HTMLButtonElement;
+        button?.click();
+    };
+
     return (
-        <>
-            <h1>Ask Allica</h1>
-            <div>
-                {isClose ?
-                    <img src={allicaClose} className="logo" alt="Vite logo"/> :
-                    <img src={allicaOpen} className="logo react" alt="React logo"/>}
-            </div>
-        </>
+        <div>
+            <nav>
+                <img src={allicaLogo} alt="Allica Bank"/>
+            </nav>
+            <section>
+                <div className="header" onClick={handleClick}>
+                    {isClose ?
+                        <img src={allieClose} className="logo" alt="Closed allicator"/> :
+                        <img src={allieOpen} className="logo" alt="Open allicator"/>}
+                    <h1>Ask Allie</h1>
+                </div>
+            </section>
+        </div>
     );
 }
 

@@ -32,7 +32,10 @@ function App() {
                     {isClose ?
                         <img src={allieClose} className="logo" alt="Closed allicator"/> :
                         <img src={allieOpen} className="logo" alt="Open allicator"/>}
+                    <div>
                     <h1>Ask Allie</h1>
+                        <p>Click the chat to ask a question</p>
+                    </div>
                 </div>
             </section>
         </div>

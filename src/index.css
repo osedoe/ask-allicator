@@ -39,21 +39,9 @@ nav {
 
 section {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  height: 100vh;
   color: #ffffff;
   background-color: #00204e33;
-}
-
-h1 {
-  font-size: 4em;
-  line-height: 1.1;
-}
-
-p {
-  font-size: 1.2em;
 }
 
 .header {
@@ -66,5 +54,15 @@ p {
   padding: 1.2em 7em 1.2em 5em;
   user-select: none;
   white-space: nowrap;
-  margin-top: -200px;
+  width: fit-content;
+  margin: 10em 10em 30em;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.2em;
 }

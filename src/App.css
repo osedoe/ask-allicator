@@ -1,15 +1,12 @@
 #root {
   margin: 0;
-  /*margin: 0 auto;*/
-  /*padding: 2rem;*/
-  /*text-align: center;*/
-  /*background-color: red;*/
 }
 
 .logo {
-  height: 6em;
+  height: 12em;
+  width: 8em;
   padding: .6em;
-  margin-right: 1em;
+  margin-right: 4em;
   will-change: filter;
   transition: filter 300ms;
 }
